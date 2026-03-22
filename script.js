@@ -26,14 +26,14 @@ const translations = {
     education_title: "Education",
     training_title: "Further training",
 
-    languages_kicker: "Languages",
+    profile_kicker: "Languages & competencies",
+    profile_heading: "Languages & core competencies",
     languages_heading: "Languages",
     language_1: "Swedish (native)",
     language_2: "Finnish (native)",
     language_3: "English (fluent)",
     language_4: "German (basic)",
 
-    skills_kicker: "Skills",
     skills_heading: "Core competencies",
     skill_1: "Leadership",
     skill_2: "Acting",
@@ -41,7 +41,9 @@ const translations = {
     skill_4: "Writing",
     skill_5: "Audience engagement",
 
-    footer_text: "Available for roles in arts management, cultural coordination, theatre, and programme support.",
+    show_more: "Show more",
+    show_less: "Show less",
+
     project_link: "Project link",
 
     job_1_title: "Vanda stad",
@@ -181,14 +183,14 @@ const translations = {
     education_title: "Utbildning",
     training_title: "Fortbildning",
 
-    languages_kicker: "Språk",
+    profile_kicker: "Språk & kompetenser",
+    profile_heading: "Språk & kärnkompetenser",
     languages_heading: "Språk",
     language_1: "Svenska (modersmål)",
     language_2: "Finska (modersmål)",
     language_3: "Engelska (flytande)",
     language_4: "Tyska (grunder)",
 
-    skills_kicker: "Kompetenser",
     skills_heading: "Kärnkompetenser",
     skill_1: "Ledarskap",
     skill_2: "Skådespeleri",
@@ -196,7 +198,9 @@ const translations = {
     skill_4: "Skrivande",
     skill_5: "Publikarbete",
 
-    footer_text: "Tillgänglig för roller inom arts management, kulturkoordinering, teater och programverksamhet.",
+    show_more: "Visa mer",
+    show_less: "Visa mindre",
+
     project_link: "Projektlänk",
 
     job_1_title: "Vanda stad",
@@ -336,14 +340,14 @@ const translations = {
     education_title: "Koulutus",
     training_title: "Täydennyskoulutus",
 
-    languages_kicker: "Kielet",
+    profile_kicker: "Kielet & osaaminen",
+    profile_heading: "Kielet & ydinosaaminen",
     languages_heading: "Kielet",
     language_1: "Ruotsi (äidinkieli)",
     language_2: "Suomi (äidinkieli)",
     language_3: "Englanti (sujuva)",
     language_4: "Saksa (perusteet)",
 
-    skills_kicker: "Taidot",
     skills_heading: "Ydinosaaminen",
     skill_1: "Johtaminen",
     skill_2: "Näytteleminen",
@@ -351,7 +355,9 @@ const translations = {
     skill_4: "Kirjoittaminen",
     skill_5: "Yleisötyö",
 
-    footer_text: "Haen tehtäviä arts managementin, kulttuurikoordinoinnin, teatterin ja ohjelmatyön parissa.",
+    show_more: "Näytä lisää",
+    show_less: "Näytä vähemmän",
+
     project_link: "Projektin linkki",
 
     job_1_title: "Vantaan kaupunki",
@@ -498,6 +504,47 @@ function setLanguage(lang) {
   document.querySelectorAll(".lang-btn").forEach((button) => {
     button.classList.toggle("active", button.dataset.lang === lang);
   });
+
+  updateExperienceToggleText();
+}
+
+function updateExperienceToggleText() {
+  const toggle = document.getElementById("experienceToggle");
+  if (!toggle) return;
+
+  const lang = document.documentElement.lang in translations ? document.documentElement.lang : "en";
+  const current = translations[lang];
+  const expanded = toggle.getAttribute("aria-expanded") === "true";
+
+  toggle.textContent = expanded ? current.show_less : current.show_more;
+}
+
+function setupExperienceToggle() {
+  const toggle = document.getElementById("experienceToggle");
+  const hiddenItems = document.querySelectorAll(".experience-extra");
+
+  if (!toggle || !hiddenItems.length) return;
+
+  let expanded = false;
+
+  hiddenItems.forEach((item) => {
+    item.hidden = true;
+  });
+
+  toggle.setAttribute("aria-expanded", "false");
+
+  toggle.addEventListener("click", () => {
+    expanded = !expanded;
+
+    hiddenItems.forEach((item) => {
+      item.hidden = !expanded;
+    });
+
+    toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+    updateExperienceToggleText();
+  });
+
+  updateExperienceToggleText();
 }
 
 document.querySelectorAll(".lang-btn").forEach((button) => {
@@ -505,6 +552,8 @@ document.querySelectorAll(".lang-btn").forEach((button) => {
     setLanguage(button.dataset.lang);
   });
 });
+
+setupExperienceToggle();
 
 const savedLanguage = localStorage.getItem("siteLanguage") || "en";
 setLanguage(savedLanguage);

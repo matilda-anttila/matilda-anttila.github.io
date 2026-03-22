@@ -184,45 +184,45 @@
             <h2 data-i18n="experience_heading">Work experience</h2>
           </div>
 
-          <div class="text-stack">
-            <div>
+          <div class="text-stack experience-list" id="experienceList">
+            <div class="experience-item">
               <h3 data-i18n="job_1_title">Vanda stad</h3>
               <p class="meta-line" data-i18n="job_1_meta">2025 · Cultural producer</p>
               <p data-i18n="job_1_desc">Responsible for summer activities at Barnkulturcentret Pyykkitupa.</p>
             </div>
 
-            <div>
+            <div class="experience-item">
               <h3 data-i18n="job_2_title">Barnens Estrad</h3>
               <p class="meta-line" data-i18n="job_2_meta">2025 · Director — Mamma Mu cyklar</p>
               <p data-i18n="job_2_desc">Dramaturgy and direction.</p>
             </div>
 
-            <div>
+            <div class="experience-item">
               <h3 data-i18n="job_3_title">Yle / Rundradion — Watt Nytt</h3>
               <p class="meta-line" data-i18n="job_3_meta">2024 · Children's news editor</p>
               <p data-i18n="job_3_desc">Freelance editor for children's web news. Tasks included producing, scriptwriting, filming and editing.</p>
             </div>
 
-            <div>
+            <div class="experience-item">
               <h3 data-i18n="job_4_title">Helsingfors stad</h3>
               <p class="meta-line" data-i18n="job_4_meta">2023 · Director — Grinchen</p>
               <p data-i18n="job_4_desc">Dramaturgy, directing, filming and editing of the Christmas film for Munksnäs grundskola.</p>
             </div>
 
-            <div>
+            <div class="experience-item experience-extra">
               <h3 data-i18n="job_5_title">Barnens Estrad</h3>
               <p class="meta-line" data-i18n="job_5_meta">2022–2023 · Artistic director</p>
               <p data-i18n="job_5_desc">Responsible for the artistic direction of touring children's theatre. Tasks included scriptwriting, directing, acting and pedagogical material design.</p>
               <p data-i18n="job_5_desc_2">Original script, direction & choreography: Rosa Indigo – Du är bra! Music performance for ages 5–9.</p>
             </div>
 
-            <div>
+            <div class="experience-item experience-extra">
               <h3 data-i18n="job_6_title">Barnens Estrad</h3>
               <p class="meta-line" data-i18n="job_6_meta">2023 · Director — Jul med Alfons Åberg</p>
               <p data-i18n="job_6_desc">Dramaturgy and direction.</p>
             </div>
 
-            <div>
+            <div class="experience-item experience-extra">
               <h3 data-i18n="job_7_title">Barnens Estrad</h3>
               <p class="meta-line" data-i18n="job_7_meta">2019–2023 · Actor, director, writer</p>
               <ul class="clean">
@@ -240,36 +240,40 @@
               </ul>
             </div>
 
-            <div>
+            <div class="experience-item experience-extra">
               <h3 data-i18n="job_8_title">Teaterskolan DOT</h3>
               <p class="meta-line" data-i18n="job_8_meta">2021–2022 · Drama teacher</p>
               <p data-i18n="job_8_desc">Teacher in basic arts education for children.</p>
             </div>
 
-            <div>
+            <div class="experience-item experience-extra">
               <h3 data-i18n="job_9_title">Yrkeshögskolan Novia</h3>
               <p class="meta-line" data-i18n="job_9_meta">2020 · Forum theatre, hourly lecturer</p>
               <p data-i18n="job_9_desc">Courses in forum theatre for social work and performing arts pedagogy students.</p>
             </div>
 
-            <div>
+            <div class="experience-item experience-extra">
               <h3 data-i18n="job_10_title">Udda Syskonskap rf</h3>
               <p class="meta-line" data-i18n="job_10_meta">2018 · Actor, producer, co-founder</p>
               <p data-i18n="job_10_desc">Co-founded the theatre association. Performed in Ta det som en komplimang, a touring forum theatre production.</p>
             </div>
 
-            <div>
+            <div class="experience-item experience-extra">
               <h3 data-i18n="job_11_title">Dramadialog rf</h3>
               <p class="meta-line" data-i18n="job_11_meta">2018–2019 · Actor — Gråzon deluxe</p>
               <p data-i18n="job_11_desc">Scriptwriting and acting in forum theatre production on school tour.</p>
             </div>
 
-            <div>
+            <div class="experience-item experience-extra">
               <h3 data-i18n="job_12_title">Brages friluftsmuseum</h3>
               <p class="meta-line" data-i18n="job_12_meta">2018 · Actor — drama walk</p>
               <p data-i18n="job_12_desc">Actor in dramatized museum guiding for children.</p>
             </div>
           </div>
+
+          <button type="button" class="expand-btn" id="experienceToggle" data-i18n="show_more">
+            Show more
+          </button>
         </article>
 
         <article id="details" class="card detail-card">
@@ -299,40 +303,37 @@
 
         <article class="card detail-card">
           <div class="section-heading">
-            <span class="section-kicker" data-i18n="languages_kicker">Languages</span>
-            <h2 data-i18n="languages_heading">Languages</h2>
+            <span class="section-kicker" data-i18n="profile_kicker">Languages & competencies</span>
+            <h2 data-i18n="profile_heading">Languages & core competencies</h2>
           </div>
 
           <div class="text-stack">
-            <ul class="clean">
-              <li data-i18n="language_1">Swedish (native)</li>
-              <li data-i18n="language_2">Finnish (native)</li>
-              <li data-i18n="language_3">English (fluent)</li>
-              <li data-i18n="language_4">German (basic)</li>
-            </ul>
-          </div>
-        </article>
+            <div>
+              <h3 data-i18n="languages_heading">Languages</h3>
+              <ul class="clean">
+                <li data-i18n="language_1">Swedish (native)</li>
+                <li data-i18n="language_2">Finnish (native)</li>
+                <li data-i18n="language_3">English (fluent)</li>
+                <li data-i18n="language_4">German (basic)</li>
+              </ul>
+            </div>
 
-        <article class="card detail-card">
-          <div class="section-heading">
-            <span class="section-kicker" data-i18n="skills_kicker">Skills</span>
-            <h2 data-i18n="skills_heading">Core competencies</h2>
-          </div>
-
-          <div class="tag-list">
-            <span class="tag" data-i18n="skill_1">Acting</span>
-            <span class="tag" data-i18n="skill_2">Direction</span>
-            <span class="tag" data-i18n="skill_3">Writing</span>
-            <span class="tag" data-i18n="skill_4">Leadership</span>
-            <span class="tag" data-i18n="skill_5">Audience engagement</span>
+            <div>
+              <h3 data-i18n="skills_heading">Core competencies</h3>
+              <div class="tag-list">
+                <span class="tag" data-i18n="skill_1">Acting</span>
+                <span class="tag" data-i18n="skill_2">Directing</span>
+                <span class="tag" data-i18n="skill_3">Writing</span>
+                <span class="tag" data-i18n="skill_4">Leadership</span>
+                <span class="tag" data-i18n="skill_5">Audience engagement</span>
+              </div>
+            </div>
           </div>
         </article>
       </section>
     </main>
 
-    <footer class="site-footer">
-    </footer>
-
+    <footer class="site-footer"></footer>
   </div>
 
   <script src="script.js"></script>
