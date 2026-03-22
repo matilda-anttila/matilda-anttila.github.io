@@ -47,7 +47,7 @@ const translations = {
     project_link: "Project link",
 
     job_1_title: "Vanda stad",
-    job_1_meta: "2025 · Cultural producer",
+    job_1_meta: "2025 · Production assistant",
     job_1_desc: "Responsible for summer activities at Barnkulturcentret Pyykkitupa.",
 
     job_2_title: "Barnens Estrad",
@@ -204,7 +204,7 @@ const translations = {
     project_link: "Projektlänk",
 
     job_1_title: "Vanda stad",
-    job_1_meta: "2025 · Kulturproducent",
+    job_1_meta: "2025 ·  Produktionsassistent",
     job_1_desc: "Ansvarig för sommarverksamheten på Barnkulturcentret Pyykkitupa.",
 
     job_2_title: "Barnens Estrad",
@@ -361,7 +361,7 @@ const translations = {
     project_link: "Projektin linkki",
 
     job_1_title: "Vantaan kaupunki",
-    job_1_meta: "2025 · Kulttuurituottaja",
+    job_1_meta: "2025 · Tuotantoassistentti",
     job_1_desc: "Vastasi Barnkulturcentret Pyykkituvan kesätoiminnasta.",
 
     job_2_title: "Barnens Estrad",
