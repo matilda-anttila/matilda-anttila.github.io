@@ -108,7 +108,7 @@ const translations = {
     edu_1_meta: "University of the Arts Helsinki, Sibelius Academy | 2024–2026",
     edu_1_desc: "Master of Arts — Arts Management, Society and Creative Entrepreneurship",
     edu_2_meta: "Novia University of Applied Sciences | 2014–2018",
-    edu_2_desc: "Performing Arts Pedagogue / Cultural Producer",
+    edu_2_desc: "Pedagogue of Performing Art",
 
     training_1: "2024 · Forum Theatre: Rainbow of Desire method — Jana Sanskriti (Gävle, Sweden)",
     training_2: "2018 · International training for Theatre of the Oppressed — Centro de Teatro do Oprimido (Rio de Janeiro, Brazil)",
@@ -265,7 +265,7 @@ const translations = {
     edu_1_meta: "Konstuniversitetets Sibelius-Akademi | 2024–2026",
     edu_1_desc: "Konstledarskap och företagsamhet, konstmagister",
     edu_2_meta: "Yrkeshögskolan Novia | 2014–2018",
-    edu_2_desc: "Scenkonstpedagog / Kulturproducent",
+    edu_2_desc: "Scenkonstpedagog",
 
     training_1: "2024 · Forumteater: Rainbow of Desire-metod — Jana Sanskriti (Gävle, Sverige)",
     training_2: "2018 · International training for Theater of the Oppressed — Centro de Teatro do Opprimido (Rio de Janeiro, Brasilien)",
@@ -422,7 +422,7 @@ const translations = {
     edu_1_meta: "Taideyliopiston Sibelius-Akatemia | 2024–2026",
     edu_1_desc: "Taidejohtaminen ja yrittäjyys, taiteen maisteri",
     edu_2_meta: "Yrkeshögskolan Novia | 2014–2018",
-    edu_2_desc: "Esittävän taiteen pedagogi / kulttuurituottaja",
+    edu_2_desc: "Näyttämötaiteen pedagogi",
 
     training_1: "2024 · Forumteatteri: Rainbow of Desire -menetelmä — Jana Sanskriti (Gävle, Ruotsi)",
     training_2: "2018 · International training for Theatre of the Oppressed — Centro de Teatro do Opprimido (Rio de Janeiro, Brasilia)",
